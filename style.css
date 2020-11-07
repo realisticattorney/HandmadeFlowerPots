@@ -1,0 +1,40 @@
+* {
+   box-sizing: border-box;
+   margin: 0;
+   padding: 0;
+}
+body {
+   
+}
+.container {
+   display: grid;
+   grid-template: repeat(6, auto) / repeat(12, 1fr);
+   grid-template-areas:
+                  "h";
+}
+.header {
+   grid-area: 1/1 / 1/ -1;
+   display: grid;
+   grid-template: 120px / repeat(auto-fill, minmax(1));
+}
+}
+.front
+
+.featuredcatalog {
+   display: grid;
+   grid-template: repeat(auto-fill, 100px) / repeat(auto-fill, minmax(100px, 1fr));
+   grid
+
+}
+
+
+.banner
+
+.hotsale
+
+.socialmedia
+
+.footer
+
+
+.bottomnavbar
