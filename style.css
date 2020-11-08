@@ -3,37 +3,120 @@
    margin: 0;
    padding: 0;
 }
-body {
+body {    
+   
+   background-color: #ffffff;
+   color: #36393d;
+   font-family: "Lato";
+   background-color: blanchedalmond;
+
    
 }
 .container {
    display: grid;
-   grid-template: repeat(6, auto) / repeat(12, 1fr);
-   grid-template-areas:
-                  "h";
+   grid-template-columns: 1fr;
+   grid-template-rows: repeat(6, auto);
 }
 .header {
-   grid-area: 1/1 / 1/ -1;
    display: grid;
-   grid-template: 120px / repeat(auto-fill, minmax(1));
+   min-height: 220px;
+   grid-template: auto auto auto/ 1fr;
+   font-size: 12px;
+   background-color: white ;
+   box-shadow:0px 1px 5px grey;  
 }
+/* repeat(auto-fill, minmax(200px, 1fr)) */
+.banner1 {
+   background-color: #D1C1B0;
 }
-.front
+.banner2 {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
 
-.featuredcatalog {
+}
+.contact1 {
+   
+}
+.contact2 {
+
+}
+.contact3 {
+
+}
+
+.banner3 {
+   display: flex;
+   align-items: center;
+   
+}
+
+.front {
    display: grid;
-   grid-template: repeat(auto-fill, 100px) / repeat(auto-fill, minmax(100px, 1fr));
-   grid
+   grid-template-columns: minmax(80%, 1100px);
+   justify-self: center;
+   margin: 25px 0;
+
+}
+.front-img {
+   width: 100%;
+   border: 1px solid white;
+   
+}
+
+.featured {
+   display: grid;  
+   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+   column-gap: 35px;
+   justify-self: center;
+   margin: 50px 0;
+
+}
+.featured-items {
+   overflow: hidden;
+}
+.product {
+width: 100%;
+border: 1px solid white;
 
 }
 
+.catalog {
+   display: grid;  
+   grid-template-columns: repeat(auto-fill, 200px);
+   justify-content: space-around;
+   column-gap: 50px;
+   row-gap: 35px;
+   margin: 20px 50px;
+   
 
-.banner
+   
+}
+.items-catalog{
+   overflow: hidden;
+   display: grid  ;
+   border: 1px solid green;
 
-.hotsale
+}
 
-.socialmedia
+.items-catalog-img {
+   width: 100%;
+}
 
+.banner {
+   grid-template-columns: fitcontent(1200px);
+}
+
+.newsletterFBsub {
+   grid-template-columns: repeat(2, 1fr);
+}
+
+.followIconsEnvios {
+
+}
+.navbarPaymentContact {
+
+}
 .footer
 
 
